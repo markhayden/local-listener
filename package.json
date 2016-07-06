@@ -1,0 +1,10 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "devDependencies": {
+    "body-parser": "~1.0.1",
+    "colors": "^1.1.2",
+    "express": "~4.0.0",
+    "ngrok": "^2.2.1"
+  }
+}
