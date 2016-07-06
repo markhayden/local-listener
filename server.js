@@ -15,9 +15,9 @@ var port = process.env.PORT || 8080; // set the port to use
 var router = express.Router();
 
 router.post('/post', function(req, res) {
-    console.log('Request: POST /');
-    console.dir(req.body);
-    console.log('--');
+    console.log('Request: POST /post');
+    console.log(colors.cyan(JSON.stringify(req.body, null, 4)));
+    console.log(colors.gray('--'));
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 });
