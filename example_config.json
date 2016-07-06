@@ -1,0 +1,8 @@
+{
+  "proto": "http",
+  "addr": 8080,
+  "auth": "user:pwd",
+  "subdomain": "bonkybonk",
+  "authtoken": "12345",
+  "region": "us"
+}
