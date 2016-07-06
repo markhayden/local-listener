@@ -28,9 +28,9 @@ app.use('/', router);
 // START THE SERVER & NGROK TUNNEL
 app.listen(port);
 ngrok.connect(port, function (err, url) {
-	console.log(colors.green('*****************************************************************************************************'));
+	console.log(colors.green('*************************************************************************************************************************'));
 	console.log(colors.green('SERVER READY'));
 	console.log(colors.green('LISTENING AT: ' + url + '/post'));
 	console.log(colors.green('EXAMPLE REQUEST:'), colors.white('curl -H "Content-Type: application/json" -X POST -d \'{"pickles":"yuck"}\' '+ url + '/post'));
-	console.log(colors.green('*****************************************************************************************************'));
+	console.log(colors.green('*************************************************************************************************************************'));
 });
