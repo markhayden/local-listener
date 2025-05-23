@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Webhook endpoint
-app.post('/post', (req, res) => {
+app.post('/post*', (req, res) => {
   console.log(colors.cyan('📥 Incoming POST /post'));
   console.log(colors.yellow('🔍 Request Info:'));
   console.log(colors.gray(`Method: ${req.method}`));
